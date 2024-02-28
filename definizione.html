@@ -4,36 +4,24 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>2 dadi</title>
-
-
-
+<title>Analisi Tecnica: Il Potere delle Candele Giapponesi</title>
 </head>
 <body>
 
+<!-- Contenitore per l'articolo -->
+<div id="articolo" style="display: none;">
+    <h1>Analisi Tecnica: Il Potere delle Candele Giapponesi</h1>
+    <p>Nel vasto mondo dell'analisi tecnica, una delle metodologie più affascinanti e potenti è rappresentata dalle candele giapponesi. Questo strumento visivo offre una prospettiva unica sull'andamento dei prezzi, consentendo agli investitori di cogliere segnali cruciali sui mercati finanziari. In questo articolo, esploreremo l'origine delle candele giapponesi, la loro evoluzione e il loro impatto nell'ambito dell'analisi tecnica occidentale.</p>
+    <!-- Altri paragrafi dell'articolo... -->
+</div>
+
 <script>
-function tiro(){
-    document.getElementById("1").innerHTML = dado1(6);
-    document.getElementById("2").innerHTML = dado2(6);
-    return dado1(n);
-    return dado2(n);
-    }  
-   function dado1(n)
-    {
-    a=0;
-    a=Math.floor((Math.random()*n)+1);
-    return a;
-    }
-    function dado2(n)
-    {
-    b=0;
-    b=Math.floor((Math.random()*n)+1);
-    return b;
-    }
+function mostraArticolo(){
+    document.getElementById("articolo").style.display = "block"; // Mostra l'articolo quando viene chiamata questa funzione
+}
 </script>
-<p>1°dado: </p><p id="1"></p>
-<p>2°dado: </p><p id="2"></p>
-<button onclick= "return tiro()">Clicca qua per tirare 2 dadi</button>
+
+<button onclick="mostraArticolo()">Mostra Articolo</button>
 
 </body>
 </html>
